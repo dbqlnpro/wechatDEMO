@@ -1,0 +1,30 @@
+/* pages/scenario_list/index.wxss */
+.firstTab .content_details {
+  display: flex;
+  border-bottom: 2rpx solid #cccccc;
+}
+.firstTab .img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstTab .img_wrap image {
+  width: 75%;
+}
+.firstTab .info_wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.firstTab .info_wrap .info_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.firstTab .info_wrap .info_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

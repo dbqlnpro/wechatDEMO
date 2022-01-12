@@ -1,0 +1,122 @@
+/* pages/user/index.wxss */
+page{
+    background-color: #efefef;
+}
+.user_info_wrap{
+    height: 45vh;
+    overflow: hidden;
+    background-color: var(--themeColor);
+    position: relative;
+    .user_img_wrap{
+        position: relative;
+        .user_bg{
+            height: 50vh;
+            width: 110vw;
+            filter: blur(10rpx);
+        }
+        .user_info{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top:20%;
+            text-align: center;
+            .user_icon{
+                width: 150rpx;
+                height: 150rpx;
+                border-radius: 50%;
+            }
+            .user_name{
+                color: #fefefe;
+                margin-top: 20rpx;
+                font-size: 36rpx;
+            }
+            
+        }
+    }
+    .user_btn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20%;
+        border: 1rpx solid #dedede;
+        color: #dedede;
+        font-size: 36rpx;
+        padding: 30rpx;
+        border-radius: 10rpx;
+    }
+}
+.user_content{
+    position: relative;
+    .user_main{
+        color: #555555;
+        padding-bottom: 100rpx;
+        position: absolute;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top:-40rpx;
+        .history_wrap{
+            background-color: #ffffff;
+            display: flex;
+            navigator{
+                flex: 1;
+                text-align: center;
+                .his_num{
+                    color: var(--themeColor);
+                    font-weight: 600;
+                }
+                .his_name{
+                    font-size: 32rpx;
+                }
+            }
+        }
+        .orders_row{
+            background-color: #ffffff;
+            margin-top: 20rpx;
+
+            .orders_title{
+                padding: 15rpx;
+                border-bottom: 1px solid #cccccc;
+            }
+            .orders_content{
+                display: flex;
+                navigator{
+                    margin-top: 10rpx;
+                    flex: 1;
+                    .iconfont{
+                        text-align: center;
+                        color: var(--themeColor);
+                    }
+                    .order_name{
+                        text-align: center;
+                        font-size: 32rpx;
+                        margin-bottom: 5rpx;
+                    }
+                }
+            }
+        }
+        .address_wrap{
+            margin-top: 30rpx;
+            background-color: #ffffff;
+            padding: 20rpx ;
+
+        }
+        .app_info_wrap{
+            margin-top: 30rpx;
+            background-color: #fff;
+            .app_info_item{
+                padding: 20rpx;
+                border-bottom: 1px solid #cccccc;
+            }
+            .app_info_contact{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .recommend_wrap{
+            margin-top: 30rpx;
+            background-color: #ffffff;
+            padding: 20rpx ;
+        }
+    }
+}

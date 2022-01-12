@@ -1,0 +1,4 @@
+{
+  "usingComponents": {"SearchBox":"../../components/SearchBox/SearchBox"},
+  "navigationBarTitleText": "银杏果优购"
+}

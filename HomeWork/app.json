@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/category/index",
+    "pages/scenario_list/index",
+    "pages/scenario_detail/index",
+    "pages/gallery/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/auth/index",
+    "pages/pay/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "银杏果优购",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icons/home.png",
+      "selectedIconPath": "icons/home (1).png"
+    },
+    {
+      "pagePath": "pages/category/index",
+      "text": "分类",
+      "iconPath": "icons/MenuFold.png",
+      "selectedIconPath": "icons/MenuFold (1).png"
+    },
+    {
+      "pagePath": "pages/gallery/index",
+      "text": "购物车",
+      "iconPath": "icons/Open an account.png",
+      "selectedIconPath": "icons/Open an account (1).png"
+    },
+    {
+      "pagePath": "pages/user/index",
+      "text": "我的",
+      "iconPath": "icons/setting.png",
+      "selectedIconPath": "icons/setting (1).png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

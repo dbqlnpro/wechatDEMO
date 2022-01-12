@@ -1,0 +1,12 @@
+<!--pages/collect/index.wxml-->
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsChange">
+   <navigator class="content_details" wx:for="{{collect}}" wx:key="goods_id" url="/pages/scenario_detail/index?goods_id={{item.goods_id}}">
+        <view class="img_wrap">
+          <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://ae01.alicdn.com/kf/Hbd012e28a85b4525910c6cc492894aa9q.jpg'}}"></image>
+        </view>
+        <view class="info_wrap">
+          <view class="info_name">{{item.goods_name}}</view>
+          <view class="info_price">￥{{item.goods_price}}</view>
+        </view>
+      </navigator>
+</Tabs>

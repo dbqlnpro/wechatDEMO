@@ -1,0 +1,23 @@
+<view class="KPC_index">
+  <SearchBox></SearchBox>
+  <view class="index_swiper">
+    <swiper autoplay="{{true}}" circular="{{true}}" indicator-dots="{{true}}">
+      <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+       <navigator url="/pages/scenario_detail/index?goods_id={{item.goods_id}}">
+        <image src="{{item.image_src}}" mode="widthFix"></image>
+      </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="index_cate">
+    <navigator wx:for="{{cateList}}" wx:key="name" url="/pages/category/index" open-type="switchTab">
+      <image mode="widthFix" src="{{item.image_src}}"></image>
+    </navigator>
+  </view>  
+  <view class="index_floor">
+    <view class="floor_group" wx:for="{{floorList}}" wx:for-item="item_1" wx:for-index="index_1" wx:key="floor_title">
+      <view class="floor_title"><image src="{{item_1.floor_title.image_src}}" mode="widthFix"></image></view>
+      <view class="floor_list"><navigator wx:for="{{item_1.product_list}}" wx:for-item="item_2" wx:for-index="index_2" wx:key="name"><image src="{{item_2.image_src}}" mode="{{index_2===0?'widthFix':'scaleToFill'}}"></image></navigator></view>
+    </view>
+  </view>
+</view>

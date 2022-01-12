@@ -1,0 +1,47 @@
+<!--pages/scenario_detail/index.wxml-->
+<view class="detail_block">
+  <swiper autoplay circular indicator-dots interval="3000">
+    <swiper-item wx:for="{{goodsDetails.pics}}" wx:key="pics_id"
+    bindtap="handlePreview" data-url="{{item.pics_big}}">
+      <image mode="widthFix" src="{{item.pics_mid}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class="goods_price">￥{{goodsDetails.goods_price}}</view>
+    <view class="goods_name_row">
+      <view class="goods_name">{{goodsDetails.goods_name}}</view>
+      <view class="goods_collect" bindtap="handleCollect">
+        <text class="iconfont {{isCollect?'icon-youhui':'icon-icon_yulan'}}"></text>
+        <view class="collect_text">收藏</view>
+      </view>
+    </view>
+</view>
+<view class="info_detail">
+  <view class="info_title">图文详情</view>
+  <view class="item_details">
+    <rich-text nodes="{{goodsDetails.goods_introduce}}">
+    
+    </rich-text>
+  </view>
+</view>
+<view class="bottom_bar">
+  <view class="tool_item">
+    <view class="iconfont icon-kefu"></view>
+    <view>客服</view>
+    <button open-type="contact"></button>
+  </view>
+  <view class="tool_item">
+    <view class="iconfont icon-icon_fabu"></view>
+    <view>分享</view>
+    <button open-type="share"></button>
+  </view>
+  <navigator url="/pages/gallery/index" class="tool_item" open-type="switchTab">
+    <view class="iconfont icon-gongdanqueren"></view>
+    <view>购物车</view>
+  </navigator>
+  <view class="tool_item btn_cart" bindtap="handleAdd">
+    <view>购物车＋</view>
+  </view>
+  <view class="tool_item btn_buy">
+    <view>立即购买</view>
+  </view>
+</view>
